@@ -1,85 +1,100 @@
 # ai_cybersecurity_threat_detector
 
+<h2 align="center">🚀 Project Setup & Run Guide</h2>
 
-🚀 Project Setup & Run Guide
+<p>This project has three main parts:</p>
+<ol>
+  <li><strong>Model Training</strong></li>
+  <li><strong>Backend Server</strong></li>
+  <li><strong>Frontend (React UI)</strong></li>
+</ol>
 
-This project consists of three parts:
+<hr/>
 
-Model Training
+<h3>1️⃣ Train the AI Model (First Time Only)</h3>
 
-Backend Server
-
-Frontend (React App)
-
-You’ll be running each part in separate terminals, so keep them open.
-
-1️⃣ Train the AI Model (First Time Only)
-
-Open a new terminal:
-
+<pre>
+<b>Open a new terminal:</b>
 cd model
 
-
-Install model dependencies:
-
+<b>Install dependencies:</b>
 pip install -r requirements.txt
 
-
-Train the model:
-
+<b>Train the model:</b>
 python train_model.py
+</pre>
 
+<p>✅ The trained model will be saved at:</p>
+<pre>model/pretrained/model_weights.pth</pre>
 
-✅ After training, the model weights will be saved here:
+<hr/>
 
-model/pretrained/model_weights.pth
+<h3>2️⃣ Start the Backend Server</h3>
 
-2️⃣ Start the Backend Server
-
-Open a second terminal:
-
+<pre>
+<b>Open another terminal:</b>
 cd backend
 
-
-Create and activate a virtual environment:
-
+<b>Create Virtual Environment:</b>
 python -m venv venv
 
-
-PowerShell (Windows):
-
+<b>Activate (PowerShell on Windows):</b>
 venv\Scripts\Activate.ps1
 
-
-Install dependencies:
-
+<b>Install backend dependencies:</b>
 pip install -r requirements.txt
 
-
-Run the backend:
-
+<b>Start the backend:</b>
 python app.py
+</pre>
 
+<p>✅ Backend is now running.</p>
 
-✅ Backend is now running.
+<hr/>
 
-3️⃣ Start the Frontend (React App)
+<h3>3️⃣ Start the Frontend (React App)</h3>
 
-Open a third terminal:
-
+<pre>
+<b>Open a third terminal:</b>
 cd frontend
 
-
-Install UI dependencies (only needed once):
-
+<b>Install dependencies (only once):</b>
 npm install
 
-
-Start the React UI:
-
+<b>Start the development server:</b>
 npm start
+</pre>
 
+<p>✅ App will be available at:</p>
+<pre>http://localhost:3000</pre>
 
-✅ Frontend will open automatically at:
+<hr/>
 
-http://localhost:3000
+<h3>🎯 Summary</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Command</th>
+      <th>Terminal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Model Training</td>
+      <td><code>python train_model.py</code></td>
+      <td>#1</td>
+    </tr>
+    <tr>
+      <td>Backend Server</td>
+      <td><code>python app.py</code></td>
+      <td>#2</td>
+    </tr>
+    <tr>
+      <td>Frontend UI</td>
+      <td><code>npm start</code></td>
+      <td>#3</td>
+    </tr>
+  </tbody>
+</table>
